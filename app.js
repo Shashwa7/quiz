@@ -5,6 +5,7 @@ const result = document.querySelector('.result');
 const rightAnsLbl = document.querySelectorAll('.rightAns');
 
 
+
 form.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -18,6 +19,7 @@ form.addEventListener('submit', e => {
 
         if (ans === correctAns[index])
             score++;
+
     });
 
     let res = Math.trunc((score / 7) * 100);
@@ -43,8 +45,15 @@ form.addEventListener('submit', e => {
     }, 10);  //10 = 10ms, fires the call back func every 10ms;
 
 
+
+});
+
+const checkAns = document.querySelector('button');
+checkAns.addEventListener('click', () => {
+
     rightAnsLbl.forEach(label => {
         label.classList.add('bg-success');
     });
+
 });
 
