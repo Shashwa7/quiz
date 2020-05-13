@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- using boot strap classes py(padding y),bg,text; -->
+    <!--top section-->
+    <div class="intro py-3 bg-dark text-center">
+        <div class="container">
+            <h2 class="text-primary display-3 my-4">Logical Reasoning </h2>
+        </div>
+    </div>
+
+    <!-- result section -->
+    <div class="result py-4 d-none bg-secondary text-center text-white">
+        <div class='container lead'>
+            <p class='display-4'>Scored:<span class="text-warning display-4 p-3">0%</span></p>
+        </div>
+        
+    </div>
+
+    <!-- quiz section -->
+    <div class="quiz py-4 bg-primary">
+        <div class="container">
+            <h1 class="text-light font-weight-light display-5">Level: Rookie</h1>
+            <form class="quiz-form text-light">
+                <!-- div for each ques -->
+                <!-- q1 -->
+                <div class="my-5">
+
+                    <p class="lead font-weigth-normal">
+                        1. “ Find the missing number in the series: 7, 9, 12, 48, ?, 890 ”
+                    </p>
+                    <!-- options -->
+
+                    <!-- option1 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q1" value="A">
+                        <label class="fomr-check-label">128</label>
+                    </div>
+
+                    <!-- option2 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q1" value="B">
+                        <label class="fomr-check-label">172</label>
+                    </div>
+
+                    <!-- option3 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q1" value="C">
+                        <label class="fomr-check-label">None of these</label>
+                    </div>
+                </div>
+
+                <!-- q2 -->
+                <div class="my-5">
+
+                    <p class="lead font-weigth-normal">
+                        2. “RQP, ONM, _, IHG, FED, find the missing letters.”
+                    </p>
+                    <!-- options -->
+
+                    <!-- option1 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q2" value="A">
+                        <label class="fomr-check-label">LKJ
+                        </label>
+                    </div>
+
+                    <!-- option2 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q2" value="B">
+                        <label class="fomr-check-label">LKI</label>
+                    </div>
+
+                    <!-- option3 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q2" value="C">
+                        <label class="fomr-check-label">CDE</label>
+                    </div>
+                </div>
+
+                <!-- q3 -->
+                <div class="my-5">
+
+                    <p class="lead font-weigth-normal">
+                        3. “PETAL: FLOWER”
+                    </p>
+                    <!-- options -->
+
+                    <!-- option1 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q3" value="A">
+                        <label class="fomr-check-label">Pen: Paper</label>
+                    </div>
+
+                    <!-- option2 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q3" value="B">
+                        <label class="fomr-check-label">Engine: Car</label>
+                    </div>
+
+                    <!-- option3 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q3" value="C">
+                        <label class="fomr-check-label">Cat: Dog</label>
+                    </div>
+                </div>
+
+                <!-- q4 -->
+                <div class="my-5">
+
+                    <p class="lead font-weigth-normal">
+                        4. “ If in a certain language, NOIDA is coded as OPJEB, how is DELHI coded in that language? ”
+                    </p>
+                    <!-- options -->
+
+                    <!-- option1 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q4" value="A">
+                        <label class="fomr-check-label">EFMIJ</label>
+                    </div>
+
+                    <!-- option2 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q4" value="B">
+                        <label class="fomr-check-label">CDKGH</label>
+                    </div>
+
+                    <!-- option3 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q4" value="C">
+                        <label class="fomr-check-label">FGNJK</label>
+                    </div>
+                </div>
+
+                <!-- q5 -->
+                <div class="my-5">
+
+                    <p class="lead font-weigth-normal">
+                        5. “ Which word does not belong to others? ”
+                    </p>
+                    <!-- options -->
+
+                    <!-- option1 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q5" value="A">
+                        <label class="fomr-check-label">Inch</label>
+                    </div>
+
+                    <!-- option2 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q5" value="B">
+                        <label class="fomr-check-label">Centimeter</label>
+                    </div>
+
+                    <!-- option3 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q5" value="C">
+                        <label class="fomr-check-label">Kilogram</label>
+                    </div>
+                </div>
+
+                <!-- q6 -->
+                <div class="my-5">
+
+                    <p class="lead font-weigth-normal">
+                        6. “ Pointing to a photograph, a man said, "I have no brother, and that man's father is my
+                        father's son." Whose photograph was it? ”
+                    </p>
+                    <!-- options -->
+
+                    <!-- option1 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q6" value="A">
+                        <label class="fomr-check-label">His father</label>
+                    </div>
+
+                    <!-- option2 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q6" value="B">
+                        <label class="fomr-check-label">His nephew</label>
+                    </div>
+
+                    <!-- option3 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q6" value="C">
+                        <label class="fomr-check-label">His son</label>
+                    </div>
+                </div>
+
+                <!-- q7 -->
+                <div class="my-5">
+
+                    <p class="lead font-weigth-normal">
+                        7. “ Peter is in the East of Tom and Tom is in the North of John. Mike is in the South of John
+                        then in which direction of Peter is Mike?
+                        ”
+                    </p>
+                    <!-- options -->
+
+                    <!-- option1 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q7" value="A">
+                        <label class="fomr-check-label">South-East</label>
+                    </div>
+
+                    <!-- option2 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q7" value="B">
+                        <label class="fomr-check-label">South-West</label>
+                    </div>
+
+                    <!-- option3 -->
+                    <div class="form-check my2 text-white-20">
+                        <input type="radio" name="q7" value="C">
+                        <label class="fomr-check-label">North-East</label>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <input type="submit" class="btn btn-light">
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
