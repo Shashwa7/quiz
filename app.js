@@ -2,6 +2,8 @@
 const correctAns = ['B', 'A', 'B', 'A', 'C', 'C', 'B'];
 const form = document.querySelector('.quiz-form');
 const result = document.querySelector('.result');
+const rightAnsLbl = document.querySelectorAll('.rightAns');
+
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -13,11 +15,13 @@ form.addEventListener('submit', e => {
 
     //check user answer
     userAns.forEach((ans, index) => {
+
         if (ans === correctAns[index])
             score++;
     });
 
     let res = Math.trunc((score / 7) * 100);
+
 
     // show result
     //scrollTo(x cordinate, y cordinate;) using window object - after submission the page will auto scroll to the top section
@@ -26,7 +30,7 @@ form.addEventListener('submit', e => {
     result.classList.remove('d-none');
 
     //using setiInterval to display final result gradually-like timer animation
-    let output = 0; 
+    let output = 0;
     const timer = setInterval(() => {
 
         result.querySelector('span').textContent = `${output}%`;
@@ -39,5 +43,8 @@ form.addEventListener('submit', e => {
     }, 10);  //10 = 10ms, fires the call back func every 10ms;
 
 
+    rightAnsLbl.forEach(label => {
+        label.classList.add('bg-success');
+    });
 });
 
