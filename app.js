@@ -42,7 +42,7 @@ form.addEventListener('submit', e => {
             clearInterval(timer);
         else
             output++;
-    }, 10);  //10 = 10ms, fires the call back func every 10ms;
+    }, 3);  //10 = 10ms, fires the call back func every 10ms;
 
 
 
